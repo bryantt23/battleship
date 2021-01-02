@@ -14,6 +14,10 @@ class Gameboard {
     return this.ships.every(ship => ship.isSunk());
   }
 
+  getBoard() {
+    return this.gameBoard;
+  }
+
   //try boolean to know if turn is over
   receiveAttack(row, col) {
     const gameboardPosition = this.gameBoard[row][col];
